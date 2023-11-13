@@ -1,9 +1,9 @@
-# Android device tree for motorola moto g72 (vicky)
+# Android device tree for Motorola Moto G72 (vicky)
 
 ```
 #
-# Copyright (C) 2023 The LineageOS Project
+# How're You?
 #
-# SPDX-License-Identifier: Apache-2.0
+# Will Update this soon!
 #
 ```
