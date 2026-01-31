@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_vicky.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_vicky-user \
-    evolution_vicky-userdebug \
-    evolution_vicky-eng
+    lineage_vicky-user \
+    lineage_vicky-userdebug \
+    lineage_vicky-eng
