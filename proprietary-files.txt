@@ -1491,7 +1491,7 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
-odm/etc/vintf/manifest_b.xml
+# odm/etc/vintf/manifest_b.xml
 odm/etc/vintf/manifest_bc.xml
 odm/etc/vintf/manifest_d.xml
 odm/etc/vintf/manifest_dc.xml
@@ -2774,7 +2774,7 @@ vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hce.xml
 vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hcef.xml
 vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.uicc.xml
 vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.xml
-vendor/odm/etc/vintf/manifest_b.xml
+# vendor/odm/etc/vintf/manifest_b.xml
 vendor/odm/etc/vintf/manifest_bc.xml
 vendor/odm/etc/vintf/manifest_d.xml
 vendor/odm/etc/vintf/manifest_dc.xml
