@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Copyright (C) 2025 The LineageOS Project
+
+  SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate.
+
+     NOTE: The naming convention is "config_camelCaseValue". Some legacy
+     entries do not follow the convention, but all new entries should. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+      in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+      config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+      brightness of an all-white image.
+      If this is defined then:
+      - config_autoBrightnessLcdBacklightValues should not be defined
+      - config_screenBrightnessNits must be defined
+      - config_screenBrightnessBacklight must be defined
+      This array should have size one greater than the size of the config_autoBrightnessLevels
+      array. The brightness values must be non-negative and non-decreasing. This must be
+      overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>5.5</item>
+        <item>6.5</item>
+        <item>8.7</item>
+        <item>17.0</item>
+        <item>25.0</item>
+        <item>35.0</item>
+        <item>50.0</item>
+        <item>75.0</item>
+        <item>100.0</item>
+        <item>150.0</item>
+        <item>200.0</item>
+        <item>300.0</item>
+        <item>400.0</item>
+        <item>500.0</item>
+        <item>600.0</item>
+        <item>700.0</item>
+    </array>
+
+    <!-- Array of light sensor lux values to map to the brightness values.
+      This array should have size one less than the size of the
+      config_autoBrightnessDisplayValuesNits array. The lux values must be
+      non-negative and non-decreasing. This must be overridden in platform
+      specific overlays -->
+    <array name="config_autoBrightnessLevels">
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>5.0</item>
+        <item>10.0</item>
+        <item>20.0</item>
+        <item>40.0</item>
+        <item>80.0</item>
+        <item>150.0</item>
+        <item>300.0</item>
+        <item>600.0</item>
+        <item>1000.0</item>
+        <item>2000.0</item>
+        <item>4000.0</item>
+    </array>
+
+    <!-- Screen brightness in nits for various backlight values -->
+    <array name="config_screenBrightnessNits">
+        <item>0.1</item>
+        <item>0.5</item>
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>5.0</item>
+        <item>10.0</item>
+        <item>20.0</item>
+        <item>50.0</item>
+        <item>100.0</item>
+        <item>200.0</item>
+        <item>300.0</item>
+        <item>400.0</item>
+        <item>500.0</item>
+        <item>600.0</item>
+        <item>700.0</item>
+    </array>
+
+    <!-- Screen brightness backlight values -->
+    <array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>70</item>
+        <item>120</item>
+        <item>180</item>
+        <item>255</item>
+    </array>
+
+    <!-- Minimum and maximum screen brightness nits -->
+    <integer name="config_screenBrightnessMinimumNits">1</integer>
+    <integer name="config_screenBrightnessMaximumNits">700</integer>
+
+    <!-- Screen brightness settings -->
+    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingDefault">102</integer>
+
+    <!-- Display density configuration -->
+    <integer name="config_screenDensity">400</integer>
+</resources>

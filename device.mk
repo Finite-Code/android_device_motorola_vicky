@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.mediatek
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-impl \
@@ -169,10 +173,17 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enablezram:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enablezram
+    $(LOCAL_PATH)/rootdir/etc/fstab.enablezram:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enablezram \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Device overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/FrameworksResOverlayVicky
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
