@@ -18,15 +18,10 @@ $(call inherit-product, device/motorola/vicky/device.mk)
 PRODUCT_DEVICE := vicky
 PRODUCT_NAME := lineage_vicky
 PRODUCT_BRAND := alps
-PRODUCT_MODEL := moto g72
+PRODUCT_MODEL := vicky
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vicky_g_sys-user 13 T2SVS33.68-21-6-13 9ff85-633df5 release-keys"
-
-# LineageOS specific properties
-BUILD_FINGERPRINT := motorola/vicky_g_sys-user 13 T2SVS33.68-21-6-13 9ff85-633df5 release-keys
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
