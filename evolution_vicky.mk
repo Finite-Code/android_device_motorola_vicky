@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2025 The Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,3 +24,8 @@ PRODUCT_NAME := evolution_vicky
 EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Verified device specifications
+TARGET_SCREEN_DENSITY := 400
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=400
