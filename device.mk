@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Dalvik VM Configuration
 $(call inherit-product, frameworks/native/build/phone-xhdpi-400-dalvik-heap.mk)
