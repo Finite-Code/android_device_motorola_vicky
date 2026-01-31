@@ -170,3 +170,4 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
+BOARD_PROVIDES_VINTF_MANIFEST := true

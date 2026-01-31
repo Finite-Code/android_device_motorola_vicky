@@ -248,7 +248,7 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # Boot
 vendor/bin/hw/android.hardware.boot@1.2-service
 vendor/etc/init/android.hardware.boot@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
+# vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
 
 # Camera
 lib/motorola.hardware.camera.imgtuner@1.0.so
@@ -916,7 +916,7 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # CAS
 vendor/bin/hw/android.hardware.cas@1.2-service-lazy
 vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
+# vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
 
 # Display
 lib/com.motorola.hardware.display.panel@1.0.so
@@ -950,7 +950,7 @@ vendor/etc/init/com.motorola.hardware.display.panel@1.2-service.rc
 vendor/etc/init/com.motorola.hardware.display.touch@1.2-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/etc/vintf/manifest/com.motorola.hardware.display.panel@1.2-service.xml
+# vendor/etc/vintf/manifest/com.motorola.hardware.display.panel@1.2-service.xml
 vendor/lib/egl/mt6789/libGLES_mali.so
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
@@ -1080,8 +1080,8 @@ vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+# vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
+# vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libmockdrmcryptoplugin.so
@@ -1172,7 +1172,7 @@ vendor/bin/hw/motorola.hardware.health@2.0-service
 vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
 vendor/etc/init/motorola.hardware.health@2.0-service.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
+# vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
 vendor/lib64/libmotohid.so
 vendor/lib64/motorola.hardware.health.storage@1.0.so
 vendor/lib64/motorola.hardware.health@2.0.so
@@ -1180,7 +1180,7 @@ vendor/lib64/motorola.hardware.health@2.0.so
 # Input (Motorola)
 vendor/bin/hw/motorola.hardware.input@1.0-service
 vendor/etc/init/motorola.hardware.input@1.0-service.rc
-vendor/etc/vintf/manifest/motorola.hardware.input@1.0-service.xml
+# vendor/etc/vintf/manifest/motorola.hardware.input@1.0-service.xml
 vendor/lib64/motorola.hardware.input@1.0.so
 
 # Keymaster
@@ -1277,7 +1277,7 @@ vendor/bin/hw/vendor.dolby.media.c2@1.0-service
 vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+# vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
 vendor/lib/libdapparamstorage.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
 vendor/lib64/libcodec2_store_dolby.so
@@ -1302,7 +1302,7 @@ vendor/etc/media_profiles_vendor.xml
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
+# vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/lib/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
 vendor/lib/libneuralnetworks_sl_driver_mtk_prebuilt.so
 vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
@@ -1399,9 +1399,9 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 # Security
 vendor/bin/hw/android.hardware.security.keymint-service.trustonic
 vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
-vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
-vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
+# vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
+# vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
+# vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 vendor/lib/libcppbor_external.so
 vendor/lib64/libcppbor_external.so
 
@@ -1454,7 +1454,7 @@ vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+# vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Vibrator
 lib/motorola.hardware.vibrator@1.0.so
@@ -1475,9 +1475,9 @@ vendor/bin/hostapd_cli
 vendor/bin/wpa_cli
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+# vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
+# vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
+# vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
@@ -1491,14 +1491,14 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
-# odm/etc/vintf/manifest_b.xml
-odm/etc/vintf/manifest_bc.xml
-odm/etc/vintf/manifest_d.xml
-odm/etc/vintf/manifest_dc.xml
-odm/etc/vintf/manifest_dn.xml
-odm/etc/vintf/manifest_dnc.xml
-odm/etc/vintf/manifest_n.xml
-odm/etc/vintf/manifest_nc.xml
+# # odm/etc/vintf/manifest_b.xml
+# odm/etc/vintf/manifest_bc.xml
+# odm/etc/vintf/manifest_d.xml
+# odm/etc/vintf/manifest_dc.xml
+# odm/etc/vintf/manifest_dn.xml
+# odm/etc/vintf/manifest_dnc.xml
+# odm/etc/vintf/manifest_n.xml
+# odm/etc/vintf/manifest_nc.xml
 vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
 vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
 vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
@@ -1922,22 +1922,22 @@ vendor/etc/security/cacerts_supl/ed39abd0.0
 vendor/etc/security/cacerts_supl/f336e3d1.0
 vendor/etc/security/cacerts_supl/facacbc6.0
 vendor/etc/tetras/portrait_repair_composite.model
-vendor/etc/vintf/manifest/fdrcontrol_1.2_manifest.xml
-vendor/etc/vintf/manifest/gnss-default.xml
-vendor/etc/vintf/manifest/gnss@2.1-service.xml
-vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
-vendor/etc/vintf/manifest/lights-mtk-default.xml
-vendor/etc/vintf/manifest/manifest_IMoto_Fingerprint.xml
-vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
-vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
-vendor/etc/vintf/manifest/manifest_apuware_utils.xml
-vendor/etc/vintf/manifest/manifest_cameraprovider.xml
-vendor/etc/vintf/manifest/manifest_hwcomposer.xml
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_dolby.xml
-vendor/etc/vintf/manifest/memtrack-mediatek.xml
-vendor/etc/vintf/manifest/power-default.xml
-vendor/etc/vintf/manifest/sarwifi-default.xml
-vendor/etc/vintf/manifest/vibrator-mtk-default.xml
+# vendor/etc/vintf/manifest/fdrcontrol_1.2_manifest.xml
+# vendor/etc/vintf/manifest/gnss-default.xml
+# vendor/etc/vintf/manifest/gnss@2.1-service.xml
+# vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
+# vendor/etc/vintf/manifest/lights-mtk-default.xml
+# vendor/etc/vintf/manifest/manifest_IMoto_Fingerprint.xml
+# vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
+# vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
+# vendor/etc/vintf/manifest/manifest_apuware_utils.xml
+# vendor/etc/vintf/manifest/manifest_cameraprovider.xml
+# vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+# vendor/etc/vintf/manifest/manifest_media_c2_V1_1_dolby.xml
+# vendor/etc/vintf/manifest/memtrack-mediatek.xml
+# vendor/etc/vintf/manifest/power-default.xml
+# vendor/etc/vintf/manifest/sarwifi-default.xml
+# vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/MNL_Config.xml
@@ -2774,14 +2774,14 @@ vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hce.xml
 vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hcef.xml
 vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.uicc.xml
 vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.xml
-# vendor/odm/etc/vintf/manifest_b.xml
-vendor/odm/etc/vintf/manifest_bc.xml
-vendor/odm/etc/vintf/manifest_d.xml
-vendor/odm/etc/vintf/manifest_dc.xml
-vendor/odm/etc/vintf/manifest_dn.xml
-vendor/odm/etc/vintf/manifest_dnc.xml
-vendor/odm/etc/vintf/manifest_n.xml
-vendor/odm/etc/vintf/manifest_nc.xml
+# # vendor/odm/etc/vintf/manifest_b.xml
+# vendor/odm/etc/vintf/manifest_bc.xml
+# vendor/odm/etc/vintf/manifest_d.xml
+# vendor/odm/etc/vintf/manifest_dc.xml
+# vendor/odm/etc/vintf/manifest_dn.xml
+# vendor/odm/etc/vintf/manifest_dnc.xml
+# vendor/odm/etc/vintf/manifest_n.xml
+# vendor/odm/etc/vintf/manifest_nc.xml
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png

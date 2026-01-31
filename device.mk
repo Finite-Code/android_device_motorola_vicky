@@ -201,3 +201,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/vicky/vicky-vendor.mk)
+
+# VINTF ODM Manifest
+ODM_MANIFEST_FILES += \
+    proprietary/odm/etc/vintf/manifest_b.xml
