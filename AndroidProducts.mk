@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_vicky.mk
+    $(LOCAL_DIR)/lineage_vicky.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_vicky-user \
