@@ -17,7 +17,7 @@ $(call inherit-product, device/motorola/vicky/device.mk)
 # Device identifier. This must match your lunch combo
 PRODUCT_DEVICE := vicky
 PRODUCT_NAME := lineage_vicky
-PRODUCT_BRAND := motorola
+PRODUCT_BRAND := alps
 PRODUCT_MODEL := moto g72
 PRODUCT_MANUFACTURER := motorola
 
