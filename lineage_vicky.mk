@@ -14,18 +14,21 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 # Inherit from vicky device.
 $(call inherit-product, device/motorola/vicky/device.mk)
 
+# EvolutionX flags
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+PERF_ANIM_OVERRIDE := true
+
 ## Device identifier
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := vicky
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_NAME := evolution_vicky
 
-# Evolution X
-EVO_BUILD_TYPE := UNOFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# Verified device specifications
-TARGET_SCREEN_DENSITY := 400
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=400
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="vicky_g_sys-user 13 T2SVS33.68-21-6-13 9ff85-633df5 release-keys"
