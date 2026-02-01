@@ -120,9 +120,9 @@ DEVICE_MANIFEST_FILE += \
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
-# ODM manifest
+# ODM manifest (SKU: d)
 ODM_MANIFEST_FILES += \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest.xml
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_d.xml
 
 ## Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
