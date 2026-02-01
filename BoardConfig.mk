@@ -114,6 +114,13 @@ BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 7964982272
 
 BOARD_USES_METADATA_PARTITION := true
 
+## Disable automatic ODM manifest generation (Android 16+)
+BOARD_USE_ODM_MANIFEST := false
+PRODUCT_ENFORCE_VINTF_MANIFEST := false
+ODM_MANIFEST_FILES :=
+DEVICE_MANIFEST_FILE :=
+DEVICE_MATRIX_FILE :=
+
 ## Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
@@ -161,9 +168,6 @@ BOARD_AVB_VBMETA_VENDOR_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
-
-# Disable automatic ODM manifest generation (Android 16+)
-BOARD_USE_ODM_MANIFEST := false
 
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
