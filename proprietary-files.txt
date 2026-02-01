@@ -253,10 +253,10 @@ vendor/etc/init/android.hardware.boot@1.2-service.rc
 # Camera
 lib/motorola.hardware.camera.imgtuner@1.0.so
 lib64/motorola.hardware.camera.imgtuner@1.0.so
-system_ext/lib/libarcsoft_calibverify_TriCamera.so
-system_ext/lib/libarcsoft_tricam_calibration.so
-system_ext/lib/libarcsoft_tricam_verification.so
-system_ext/lib/motorola.hardware.camera.imgtuner@2.0.so
+# system_ext/lib/libarcsoft_calibverify_TriCamera.so
+# system_ext/lib/libarcsoft_tricam_calibration.so
+# system_ext/lib/libarcsoft_tricam_verification.so
+# system_ext/lib/motorola.hardware.camera.imgtuner@2.0.so
 system_ext/lib64/libarcsoft_calibverify_TriCamera.so
 system_ext/lib64/libarcsoft_tricam_calibration.so
 system_ext/lib64/libarcsoft_tricam_verification.so
@@ -1333,9 +1333,9 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 
 # Power
-system_ext/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-system_ext/lib/vendor.mediatek.hardware.mtkpower@1.1.so
-system_ext/lib/vendor.mediatek.hardware.mtkpower@1.2.so
+# system_ext/lib/vendor.mediatek.hardware.mtkpower@1.0.so
+# system_ext/lib/vendor.mediatek.hardware.mtkpower@1.1.so
+# system_ext/lib/vendor.mediatek.hardware.mtkpower@1.2.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
 system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
@@ -1356,7 +1356,7 @@ vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
 
 # Radio
-system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
+# system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/hw/mtkfusionrild
 vendor/etc/init/mtkrild.rc
@@ -1380,7 +1380,7 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+# system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
