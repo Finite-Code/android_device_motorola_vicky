@@ -114,9 +114,11 @@ BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 7964982272
 
 BOARD_USES_METADATA_PARTITION := true
 
-# VINTF disabled temporarily to debug build issue
-# DEVICE_MANIFEST_FILE :=
-# DEVICE_MATRIX_FILE :=
+# VINTF manifests
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
+
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 ## Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true

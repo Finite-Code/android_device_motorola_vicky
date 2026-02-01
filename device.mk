@@ -201,6 +201,3 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/vicky/vicky-vendor.mk)
-
-# Disable VINTF auto-generation from LineageOS common config
-PRODUCT_ENFORCE_VINTF_MANIFEST := false
