@@ -205,3 +205,7 @@ $(call inherit-product, vendor/motorola/vicky/vicky-vendor.mk)
 # VINTF ODM Manifest
 ODM_MANIFEST_FILES += \
     proprietary/odm/etc/vintf/manifest_b.xml
+
+# VINTF Manifests - Android 16 compliant
+ODM_MANIFEST_FILES += \
+    proprietary/odm/etc/vintf/manifest_b.xml
