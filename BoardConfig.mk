@@ -114,6 +114,12 @@ BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 7964982272
 
 BOARD_USES_METADATA_PARTITION := true
 
+# VINTF manifests
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
+
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+
 ## Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
@@ -162,24 +168,5 @@ BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
-# VINTF
-DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml \
-    $(DEVICE_PATH)/configs/vintf/lights-mtk-default.xml
-
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
-
-# ODM manifests (Android 16+ requirement)
-ODM_MANIFEST_FILES += \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_b.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_bc.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_d.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_dc.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_dn.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_dnc.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_n.xml \
-    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_nc.xml
-
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
-BOARD_PROVIDES_VINTF_MANIFEST := true
