@@ -114,12 +114,15 @@ BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 7964982272
 
 BOARD_USES_METADATA_PARTITION := true
 
-## Disable automatic ODM manifest generation (Android 16+)
-BOARD_USE_ODM_MANIFEST := false
-PRODUCT_ENFORCE_VINTF_MANIFEST := false
-ODM_MANIFEST_FILES :=
-DEVICE_MANIFEST_FILE :=
-DEVICE_MATRIX_FILE :=
+# VINTF manifests
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
+
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+
+# ODM manifest
+ODM_MANIFEST_FILES += \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest.xml
 
 ## Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
