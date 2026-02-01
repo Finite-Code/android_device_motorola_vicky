@@ -168,6 +168,17 @@ DEVICE_MANIFEST_FILE += \
 
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
+# ODM manifests (Android 16+ requirement)
+ODM_MANIFEST_FILES += \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_b.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_bc.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_d.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_dc.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_dn.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_dnc.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_n.xml \
+    $(LOCAL_PATH)/vendor/motorola/vicky/odm/etc/vintf/manifest_nc.xml
+
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
 BOARD_PROVIDES_VINTF_MANIFEST := true

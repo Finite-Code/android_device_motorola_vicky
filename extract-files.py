@@ -1,4 +1,4 @@
-#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#!/usr/bin/env -S PYTHONPATH=./android_tools_extract-utils python3
 #
 # SPDX-FileCopyrightText: 2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -21,7 +21,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    "device/xiaomi/yunluo",
+    "device/motorola/vicky",
     "hardware/mediatek",
     "hardware/mediatek/libmtkperf_client",
     "hardware/lineage/compat"

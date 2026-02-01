@@ -1,1 +1,4 @@
-device_motorola_penangf
+device_motorola_penangf/
+android_tools_extract_utils/
+vendor/
+android_tools_extract-utils/
