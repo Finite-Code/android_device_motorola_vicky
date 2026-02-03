@@ -11,6 +11,17 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 ALLOW_MISSING_DEPENDENCIES := true
 
+-include \$(LOCAL_PATH)/soong.mk
+
+# Vicky MediaTek CFI disable
+# DISABLE_CFI := true
+# SOONG_ALLOW_MISSING_DEPENDENCIES := true
+# BUILD_BROKEN_MISSING_PREBUILT_KERNEL_SEPOLICY := true
+# SOONG_CONFIG_NAMESPACES += cfi
+
+# Remove NFC
+DEVICE_MANIFEST_FILE += device/motorola/vicky/vintf/nfc_disable.xml
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += vendor_boot
@@ -57,7 +68,7 @@ BOARD_DTB_OFFSET := 0x0bc08000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_RAMDISK_USE_LZ4 := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+# BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 # BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 BOARD_KERNEL_CMDLINE += \
@@ -66,16 +77,16 @@ BOARD_KERNEL_CMDLINE += \
 
 BOARD_MKBOOTIMG_ARGS += \
     --dtb_offset $(BOARD_TAGS_OFFSET) \
-    --header_version $(BOARD_BOOTIMG_HEADER_VERSION) \
+    --header_version $(BOARD_BOOT_HEADER_VERSION) \
     --kernel_offset $(BOARD_KERNEL_OFFSET) \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --tags_offset $(BOARD_TAGS_OFFSET)
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
-TARGET_NO_KERNEL_OVERRIDE := true
-TARGET_KERNEL_CONFIG := vicky_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/vicky
+# TARGET_NO_KERNEL_OVERRIDE := true
+# TARGET_KERNEL_CONFIG := vicky_defconfig
+# TARGET_KERNEL_SOURCE := kernel/motorola/vicky
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -113,12 +124,6 @@ BOARD_MOTOROLA_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor pro
 BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 7964982272
 
 BOARD_USES_METADATA_PARTITION := true
-
-# VINTF manifests
-DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml
-
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 ## Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true

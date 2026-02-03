@@ -1,0 +1,13 @@
+<manifest version="1.0" type="framework">
+    <hal format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.6</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>em1</instance>
+            <instance>imsAospSlot1</instance>
+            <instance>se1</instance>
+        </interface>
+    </hal>
+    </manifest>

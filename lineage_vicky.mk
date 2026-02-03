@@ -23,5 +23,6 @@ PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vicky_g_sys-user 13 T2SVS33.68-21-6-13 9ff85-633df5 release-keys"
+BUILD_FINGERPRINT := "motorola/vicky/vicky_g_sys:13/T2SVS33.68-21-6-13/9ff85-633df5:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES := BuildDesc=$(call normalize-path-list, "vicky_g_sys-user-13-T2SVS33.68-21-6-13-9ff85-633df5-release-keys")
+PRODUCT_PROPERTY_OVERRIDES := ro.build.fingerprint=$(BUILD_FINGERPRINT)

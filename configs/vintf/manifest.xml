@@ -29,7 +29,7 @@
         manifest_target_level_s.xml
         manifest.xml
 -->
-<manifest version="4.0" type="device" target-level="6">
+<manifest version="1.0" type="device" target-level="6">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -595,8 +595,5 @@
         </interface>
         <fqname>@1.0::ITui/default</fqname>
     </hal>
-    <sepolicy>
-        <version>31.0</version>
-    </sepolicy>
     <kernel target-level="6"/>
 </manifest>
